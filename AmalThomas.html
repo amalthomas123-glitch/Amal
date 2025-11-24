@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amal M Thomas — Resume</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --muted: #6b7280;
+      --bg: linear-gradient(135deg, #eef2ff, #e2e8f0);
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --radius: 16px;
+      --pad: 28px;
+      --shadow: 0 10px 45px rgba(0, 0, 0, 0.08);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .resume {
+      max-width: 800px;
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--pad);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .title {
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .contact {
+      font-size: 14px;
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .contact a { color: var(--accent); text-decoration: none; }
+
+    .section {
+      margin-top: 20px;
+    }
+    .section h2 {
+      font-size: 15px;
+      color: var(--accent);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+
+    .summary {
+      font-size: 15px;
+      color: #374151;
+      margin-top: 8px;
+    }
+
+    .project {
+      margin-bottom: 14px;
+    }
+    .project b {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .project p {
+      font-size: 14px;
+      margin: 0 0 6px 0;
+      color: var(--muted);
+    }
+    .project ul {
+      margin: 6px 0 0 18px;
+      color: var(--muted);
+    }
+
+    .skill-pill {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 6px 8px 0 0;
+      border-radius: 50px;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 13px;
+      transition: 0.2s ease;
+      cursor: default;
+    }
+    .skill-pill:hover {
+      background: var(--accent);
+      color: white;
+      transform: scale(1.03);
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .print-btn {
+      display: block;
+      margin: 22px auto 0;
+      background: var(--accent);
+      border: none;
+      padding: 10px 18px;
+      border-radius: var(--radius);
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+    .print-btn:hover { background: #1d4ed8; }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .resume { box-shadow: none; }
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <div class="name">Amal M Thomas</div>
+      <div class="title">Full Stack .NET Developer — Angular • ASP.NET MVC • REST API</div>
+    </header>
+
+    <div class="contact">
+   <a href="mailto:amalthomasmamoottil@gmail.com">amalthomasmamoottil@gmail.com</a> &nbsp;|&nbsp;
+   7907367047 &nbsp;|&nbsp;
+   PRIST UNIVERSITY — B.Tech CSE (2025) — 6.7 CGPA &nbsp;|&nbsp;
+   Seventhday Adventist HSS — Higher Secondary (2021) — 87% &nbsp;|&nbsp;
+   Evershine Residential School — SSLC (2019) — 75%
+</div>
+
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Passionate Full Stack .NET Developer with experience building responsive web applications using Angular and ASP.NET MVC. Skilled in designing RESTful APIs, implementing role-based features, and delivering production-ready modules. Strong collaborator with hands-on experience in both individual and group projects, including administration and lab workflows for healthcare systems.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <b>Personal Finance Management System</b>
+        <p>Developed a lightweight finance tracker using HTML for UI and Python for business logic to manage incomes, expenses and generate summary reports.</p>
+        <ul>
+          <li>Features: Income/expense tracking, categorization, summary analytics.</li>
+          <li>Role: Front-end design and implementing reporting logic.</li>
+          <li>Tech: HTML, CSS, Python (scripts)</li>
+        </ul>
+      </div>
+
+      <div class="project">
+  <b>Lab Technician – Clinic Management System</b>
+  <p>Developed a responsive Lab Technician module for a Clinic Management System focusing on test management, sample tracking, and report handling.</p>
+  <ul>
+    <li>Features: Test entry forms, sample status updates, report display interface.</li>
+    <li>Role: UI design, layout structuring, and workflow page development.</li>
+    <li>Tech: HTML, CSS, Bootstrap</li>
+  </ul>
+</div>
+
+
+      <div class="project">
+        <b>Clinic Management System (Group Project) — Admin & Lab Technician (ASP.NET MVC)</b>
+        <p>A full-featured clinic/lab management application developed using ASP.NET MVC with role-based access for Admin and Lab Technician users.</p>
+        <ul>
+          <li><strong>Roles:</strong> Admin (user/role management, appointments, reports oversight) and Lab Technician (test tracking, sample updates, report generation).</li>
+          <li><strong>Key features:</strong> Patient registration, appointment scheduling, lab test progress tracker (Sample Collected → In Process → Verified → Result Ready), role-based dashboards, generate and download lab reports as PDF, send reports via email (frontend/email integration), and secure authentication.</li>
+          <li><strong>Responsibilities  handled:</strong> Implemented MVC controllers and views for admin & lab flows, designed database schema and Entity Framework models, created CRUD operations for patients/tests, implemented lab test status workflow, integrated PDF report generation, and ensured proper role-based authorization.</li>
+          <li><strong>Tech stack:</strong> ASP.NET MVC, C#, Entity Framework, SQL (Server/Oracle), HTML, CSS, Bootstrap, JavaScript, jsPDF/EmailJS (for frontend PDF/email demo), Git.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div>
+        <span class="skill-pill">HTML</span><span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Bootstrap</span>
+        <span class="skill-pill">C#</span>
+        <span class="skill-pill">ASP.NET MVC</span>
+        <span class="skill-pill">Oracle DB</span>
+        <span class="skill-pill">ASP.NET Web API</span>
+        <span class="skill-pill">Microsoft SQL Server
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Strengths</h2>
+      <ul class="list">
+        <li>Quick learner and adaptable to new technologies</li>
+        <li>Strong analytical and problem-solving skills</li>
+        <li>Effective team collaboration and communication</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <p class="subtle">PRIST University —B.Tech in Computer Science Engineering (2025)</p>
+    </section>
+
+    <section class="section">
+      <h2>Hobbies & Interests</h2>
+      <ul class="list">
+        <li>Playing Volleyball, Cricket, and Football</li>
+        <li>Watching Movies and Web Series</li>
+        <li>Listening to Music</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Opportunities</h2>
+      <p class="subtle">Open to full-time roles, internships, or freelance projects in Web & .NET development.</p>
+    </section>
+
+    <button class="print-btn" onclick="window.print()">Download / Print</button>
+  </div>
+</body>
+</html>
